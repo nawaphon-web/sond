@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติแผนกวิชาเทคโนโลยีสารสนเทศ วิทยาลัยเทคนิคเลย</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- Theme Settings (สีชมพูบานเย็น) --- */
+        :root {
+            --primary-color: #FF0080; /* สีชมพูบานเย็น */
+            --primary-dark: #b30059;   /* สีชมพูเข้ม (สำหรับปุ่มตอน Hover) */
+            --text-color: #333;
+            --bg-light: #fff5f9;       /* พื้นหลังชมพูจางๆ */
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Prompt', sans-serif;
+            background-color: #fafafa;
+            color: var(--text-color);
+            line-height: 1.8;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* --- Header --- */
+        header {
+            background: linear-gradient(135deg, #FF0080 0%, #ff5ca8 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(255, 0, 128, 0.2);
+        }
+
+        .logo-placeholder {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 15px rgba(255,255,255,0.6);
+        }
+
+        .logo-placeholder img { width: 80%; height: auto; }
+
+        header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 5px; }
+        header h2 { font-size: 1.2rem; font-weight: 400; opacity: 0.95; }
+
+        /* --- Container --- */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            flex: 1; /* ดัน Footer ลงล่างสุดเสมอ */
+        }
+
+        /* --- Content Blocks --- */
+        .content-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border-left: 6px solid var(--primary-color);
+        }
+
+        h3.card-title {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* ไอคอนหน้าหัวข้อ (สร้างด้วย CSS) */
+        h3.card-title::before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: var(--primary-color);
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        .text-content {
+            text-align: justify;
+            text-indent: 40px;
+            color: #555;
+        }
+
+        .list-content {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .list-content li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .list-content li::before {
+            content: '•';
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* --- Button Link to Personnel --- */
+        .btn-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(255, 0, 128, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .btn-link:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 0, 128, 0.6);
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-placeholder">
+            <img src="https://upload.wikimedia.org/wikipedia/th/a/ac/Loei_Technical_College_Logo.png" alt="Logo">
+        </div>
+        <h1>แผนกวิชาเทคโนโลยีสารสนเทศ</h1>
+        <h2>วิทยาลัยเทคนิคเลย</h2>
+    </header>
+
+    <div class="container">
+        
+        <div class="content-card">
+            <h3 class="card-title">ประวัติความเป็นมา</h3>
+            <div class="text-content">
+                <p>
+                    <strong>แผนกวิชาเทคโนโลยีสารสนเทศ วิทยาลัยเทคนิคเลย</strong> ก่อตั้งขึ้นเพื่อรองรับการขยายตัวของเทคโนโลยีและการสื่อสารในยุคดิจิทัล โดยมุ่งเน้นจัดการเรียนการสอนในระดับประกาศนียบัตรวิชาชีพ (ปวช.) และระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)
+                </p>
+                <br>
+                <p>
+                    ทางแผนกมุ่งมั่นผลิตและพัฒนากำลังคนด้านไอที ให้มีความรู้ความสามารถ ทักษะวิชาชีพ และความทันสมัยต่อเทคโนโลยีที่เปลี่ยนแปลงอย่างรวดเร็ว เพื่อตอบสนองความต้องการของสถานประกอบการ ทั้งในจังหวัดเลย และระดับประเทศ ภายใต้อัตลักษณ์ <strong>"บริการดี มีวินัย ใฝ่เรียนรู้ สู้งาน"</strong>
+                </p>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h3 class="card-title">วิสัยทัศน์และพันธกิจ</h3>
+            <p><strong>วิสัยทัศน์ (Vision):</strong></p>
+            <p class="text-content" style="text-indent: 0; padding-left: 20px; margin-bottom: 15px;">
+                "มุ่งสู่ความเป็นเลิศด้านเทคโนโลยีสารสนเทศ ผลิตนวัตกรและผู้เชี่ยวชาญไอที คู่คุณธรรมสู่สากล"
+            </p>
+
+            <p><strong>พันธกิจ (Mission):</strong></p>
+            <ul class="list-content">
+                <li>จัดการอาชีวศึกษาด้านเทคโนโลยีสารสนเทศให้ได้มาตรฐานสากล</li>
+                <li>ส่งเสริมการสร้างนวัตกรรม สิ่งประดิษฐ์ และงานวิจัยด้านไอที</li>
+                <li>บริการวิชาการและวิชาชีพสู่ชุมชนและสังคม</li>
+                <li>ปลูกฝังคุณธรรม จริยธรรม และจรรยาบรรณวิชาชีพแก่ผู้เรียน</li>
+            </ul>
+        </div>
+
+        <div class="btn-container">
+            <a href="personnel.html" class="btn-link">
+                ดูทำเนียบครูและบุคลากร >
+            </a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 แผนกวิชาเทคโนโลยีสารสนเทศ วิทยาลัยเทคนิคเลย</p>
+    </footer>
+
+</body>
+</html>
